@@ -182,7 +182,11 @@ def write_csv(data, filename):
 
     This function should not return anything.
     """
-    pass
+    with open(filename, 'w') as f:
+        f.write('Listing Title,Cost,Listing ID,Policy Number,Place Type,Number of Bedrooms\n')
+        data.sort(key=lambda x:x[2])
+        for index in range(len(data)):
+            f.write(f'{data[index][0]},{str(data[index][1])},{str(data[index][2])},{str(data[index][3])},{str(data[index][4])}, {str(data[index][5])}' + '\n')
 
 
 def check_policy_numbers(data):
