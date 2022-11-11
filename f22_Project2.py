@@ -4,6 +4,15 @@ import re
 import os
 import csv
 import unittest
+'''
+Lena Bibbo 
+48248104
+Partners: Amelia Nam and Charlotte Foley
+lbibbo@umich.edu
+
+WRITTEN REFLECTION AT BOTTOM
+
+'''
 
 
 def get_listings_from_search_results(html_file):
@@ -365,3 +374,38 @@ if __name__ == '__main__':
     write_csv(database, "airbnb_dataset.csv")
     check_policy_numbers(database)
     unittest.main(verbosity=2)
+
+
+'''
+One very effective way of showing users that an Airbnb is properly validated, would be to allow users to see the documents proving the Airbnb’s 
+business license is valid. To do so, there should be some sort of system that allows you to have access to the business name, tax number, business 
+address, license number, and business activity. Once you have access to all this information, you would be able to verify one’s business license. 
+This system is similar to this project because we were able to take data from part of a website and then utilize that public information in our desired 
+way. While this seems logical and would ensure to users that the short term rental they are staying at is safe and successfully validated, there are many 
+cons to this idea. For example, businesses and short term rental owners may be uncomfortable with the fact that third party companies will have access 
+to their personal information. Another complaint that would make people against adopting this system would be that it is too time-consuming. Many people 
+may say that users will lose interest in figuring out whether the short term rental’s business license is valid or not because it requires a lot of 
+information and time. 
+
+One question I could explore would be, does the cost of housing (specifically Airbnbs) relate positively or negatively to the average income for 
+Americans in the United States? Another question this data could help me explore could be, how does the level of safety for housing locations relate 
+to housing cost? The answer to these questions could tell potential buyers and renters that there is a lack of or substantial amount of housing security. 
+As a data scientist working with a housing activist organization to fight against housing security, if the answers to these questions reflect poorly 
+against housing security it would help our organization build a case.  		 	 	 		
+			
+I think one important factor to consider is constitutional rights, specifically the First Amendment right to free speech. If you are discussing the 
+legality of web scraping in relation to terms of service violations, people's rights still need to remain protected. Preventing someone from violating 
+the terms of service in order to access data or share information should not violate their individual rights. It is also important to consider what is 
+categorized as an infringement on personal property and whether or not a computer system is considered public or personal. This is important because the 
+legality of web scraping and data accessing can differ based on whether the system is considered to be personal property. 
+
+This situation reminds me of the Microsoft versus Google situation. There is a really fine line between deciding what is too much information versus what 
+is the appropriate amount of information. Some guidelines should be enforced to help reduce this uncomfortableness. For example, we need to make sure that
+ we are looking at the impact levels of all the information that is being processed. One guideline that we should consider is what would be the adverse effect 
+ on the individual or business? If the answer to that question is, catastrophic effects then that should tell us we should not be putting this information out 
+ to the public. Another guideline that we should consider is whether the information is a breach of privacy or a contract/regulation. If the data that we are 
+ currently assessing breaches any sort of agreements that could result in legal issues, then that should determine that we should not be using this data publicly. 
+			
+		
+
+'''
